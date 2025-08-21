@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mi Chat - Versión 2</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>Mi Chat</h1>
+
+  <div class="meta">
+    <div>Tu nombre: <span id="nombre"></span></div>
+    <div>Sala: <span id="sala"></span></div>
+    <div>
+      Enlace para compartir:
+      <input id="linkSala" readonly />
+      <button id="copiarLink">Copiar</button>
+    </div>
+  </div>
+
+  <!-- Aquí aparecen los mensajes -->
+  <div id="mensajes"></div>
+
+  <!-- Input -->
+  <div class="input-container">
+    <input type="text" id="mensajeInput" placeholder="Escribe un mensaje" />
+    <button id="enviarBtn" disabled>Enviar</button>
+  </div>
+
+  <!-- Cliente Socket.IO servido por el backend -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
