@@ -54,6 +54,4 @@ WebSockets (ws)
 
 Frontend
 
-React
-
 Vite
